@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" class="min-w-[444px] scrollbar bg-base-200"id="html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.75">
+    <meta name="author" content="Kevin Wijaya">
+    <meta name="copyright" content="© 2023 - Kevin Wijaya">
+    <link rel="stylesheet" href="{{ url_for('static',filename='dist/css/output.css') }}">
+    <script src="{{ url_for('static',filename='dist/js/__enter__.js') }}"></script>
+    <link rel="icon" href="{{ url_for('static', filename='src/image/profile/dark-icon.png') }}" type="image/png">
+    <title>Kevin Wijaya - {{ menu }}</title>
+</head>
+ <body class="my-7 mx-9 overflow-x-hidden overflow-y-scroll">
+    <!-- overlay -->
+    <div id="overlay" class="fixed top-0 bottom-0 left-0 right-0 w-full h-full bg-black bg-opacity-70" 
+        style="display: none; backdrop-filter: blur(1.1px);">
+    </div>
+
+    <!-- Navigation -->
+    <header id="navigation">
+        <div class="w-full trainsition-all duration-500 ease-linear flex items-center justify-center">
+            <div class="bg-primary flex items-center justify-between h-20 rounded-lg w-full max-w-[968px] px-3">
+                <div class="flex gap-1 items-center justify-center">
+                    <div class="md:hidden h-[50px] w-[50px] flex justify-center items-center">
+                        <!-- Button Menu -->
+                        <button class="__tools__" id="buttonHamMenu">
+                            <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M152.087-235.152q-13.924 0-23.495-9.621-9.57-9.621-9.57-23.859 0-13.498 9.57-22.944 9.571-9.446 23.495-9.446h656.326q13.424 0 23.114 9.621 9.691 9.622 9.691 23.12 0 14.238-9.691 23.683-9.69 9.446-23.114 9.446H152.087Zm0-212.283q-13.924 0-23.495-9.621-9.57-9.621-9.57-23.619 0-13.499 9.57-22.945 9.571-9.445 23.495-9.445h656.326q13.424 0 23.114 9.621 9.691 9.621 9.691 23.119 0 13.999-9.691 23.445-9.69 9.445-23.114 9.445H152.087Zm0-212.043q-13.924 0-23.495-9.621-9.57-9.622-9.57-23.859 0-13.499 9.57-22.944 9.571-9.446 23.495-9.446h656.326q13.424 0 23.114 9.621 9.691 9.621 9.691 23.12 0 14.237-9.691 23.683-9.69 9.446-23.114 9.446H152.087Z"/></svg>
+                        </button>
+                    </div>
+                    <!-- Self Brand -->
+                    <a href="/" class="text-2xl font-bold text-secondary flex gap-1 items-center justify-center shrink-0">
+                        <span class="text-3xl h-[50px] text-secondary p-2">Kevin Wijaya</span>
+                    </a>
+                </div>
+                <div class="flex items-center justify-between gap-2">
+                    <!-- Navigation Bigger -->
+                    <nav class="hidden md:block">
+                        <ul class="flex gap-2">
+                            <li><a href="/" 
+                                class="buttonMenu nav-deactivate" onclick="setMenu(this)" menu="home">
+                                <span>Home</span></a></li>
+                            <li><a href="/portfolio" 
+                                class="buttonMenu nav-deactivate" onclick="setMenu(this)" menu="portfolio">
+                                <span>Portfolio</span></a></li>
+                        </ul>
+                    </nav>
+                    <!-- Button Theme -->
+                    <button class="__tools__" id="buttonTheme"></button>
+                </div>
+            </div>
+        </div>
+        <!-- Navigation Smaller -->
+        <div class="hidden md:hidden bg-primary rounded-lg mt-4 w-fit absolute z-[9999]" id="smallMenu">
+            <nav class="bg-primary rounded-lg">
+                <ul class="flex flex-col gap-2 p-2 justify-center items-left">
+                    <li><a href="/" class="buttonMenu nav-deactivate" onclick="setMenu(this)" menu="home">
+                        <svg class="icon-activate" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M220-180h150v-220q0-12.75 8.625-21.375T400-430h160q12.75 0 21.375 8.625T590-400v220h150v-390L480-765 220-570v390Zm-60 0v-390q0-14.25 6.375-27T184-618l260-195q15.68-12 35.84-12Q500-825 516-813l260 195q11.25 8.25 17.625 21T800-570v390q0 24.75-17.625 42.375T740-120H560q-12.75 0-21.375-8.625T530-150v-220H430v220q0 12.75-8.625 21.375T400-120H220q-24.75 0-42.375-17.625T160-180Zm320-293Z"/></svg>
+                        <span>Home</span>
+                    </a></li>
+                    <li><a href="/portfolio" class="buttonMenu nav-deactivate" onclick="setMenu(this)" menu="portfolio">
+                        <svg class="icon-deactivate" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M140-120q-24 0-42-18t-18-42v-480q0-24 18-42t42-18h180v-100q0-24 18-42t42-18h200q24 0 42 18t18 42v100h180q24 0 42 18t18 42v480q0 24-18 42t-42 18H140Zm0-60h680v-480H140v480Zm240-540h200v-100H380v100ZM140-180v-480 480Z"/></svg>
+                        <span>Portfolio</span>
+                    </a></li>
+                </ul>
+            </nav>
+        </div>
+        <script src="{{ url_for('static',filename='dist/js/__init__.js') }}"></script>
+    </header>
+    
+    <!-- Content -->    
+    <main id="content">
+        {% block content %}
+    
+        {% endblock %}
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full flex items-center justify-center">
+        <div class=" max-w-[968px] flex flex-col w-full gap-6 md:gap-0 bg-primary rounded-lg">
+            <div class="text-lg flex items-center justify-center p-5 gap-2 text-base-100 font-semibold">
+                <span >© 2023</span>
+                <img id="footerLogo" class="w-10 h-10 p-[6px] bg-neutral rounded-md" alt="logo">
+                <span>Kevin Wijaya. All Rights Reserved.</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    {% block js %}
+    
+    {% endblock %}
+</body>
+</html>
+    

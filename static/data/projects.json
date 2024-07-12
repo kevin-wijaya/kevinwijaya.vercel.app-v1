@@ -1,0 +1,257 @@
+[
+    {
+        "id"    : 1,
+        "title" : "Data Cleaning for Hotel Price Prediction",
+        "subtitle" : "FIND IT 2023 UGM Competition Preliminary 2",
+        "scale" : "Competition Project",
+        "type" : ["Machine Learning"],
+        "start_date" : "18/05/2023",
+        "end_date" : "22/05/2023",
+        "pin" : false,
+        "image" : [],
+        "times" : [],
+        "description" : "The dataset used to make price predictions for the development of new hotels for \"Kyozo\" is the data from thousands of hotels owned by a global hotel network.<br><br>This project aims to make price predictions for hotels using several regression algorithms on unstructured data. Feature engineering was performed to extract the unstructured data.<br><br>The best result was achieved using the Gradient Boosting Regressor model during the hyperparameter tuning process, with a Mean Absolute Error (MAE) value of 3036.52. However, when tested with the testing data, the final MAE increased to 3074.36. This competition was conducted in teams, and my partner and I worked together on it.<br><br><div class='w-full flex items-center flex-col'><span class='inline-block w-full max-w-3xl text-base-100 text-[16px]'>Table 1. Comparison between the MSE MAE RMSE of each regression method</span><table class='text-[16px] text-base-100 text-center w-full max-w-3xl'><thead class='font-bold bg-info'><tr class='border-t'><th>Model</th><th>MAE</th><th>MSE</th><th>RMSE</th></tr></thead><tbody><tr class='font-normal'><td>Linear Regression</td><td>9783.350415</td><td>1.986525e+08</td><td>14094.414542</td></tr><tr class='font-normal'><td>Elastic Net</td><td>10506.495109</td><td>2.176188e+08</td><td>14751.907439</td></tr><tr class='font-normal'><td>Ridge</td><td>9784.132950</td><td>1.986547e+08</td><td>14094.490724</td></tr><tr class='font-normal'><td>Lasso</td><td>9782.857107</td><td>1.986250e+08</td><td>14093.436679</td></tr><tr class='font-bold'><td>Gradient Boosting Regressor</td><td>7778.375187</td><td>1.323554e+08</td><td>11504.581465</td></tr><tr class='font-normal'><td>Ada Boost Regressor</td><td>13782.323878</td><td>2.736695e+08</td><td>16542.958005</td></tr><tr class='font-bold'><td>Random Forest Regressor</td><td>3459.379853</td><td>8.098721e+07</td><td>8999.289521</td></tr><tr class='font-normal'><td>Support Vector Regressor</td><td>10896.658287</td><td>2.821481e+08</td><td>16797.264699</td></tr><tr class='font-bold'><td>XGB Regressor</td><td>8785.005833</td><td>2.136533e+08</td><td>14616.884340</td></tr><tr class='font-bold'><td>Cat Boost Regressor</td><td>4364.783223</td><td>7.305082e+07</td><td>8546.977024</td></tr></tbody></table></div><br><br>",
+        "tech" : {
+            "language" : ["Python"],
+            "package": ["Numpy", "Pandas", "Scikit-learn", "XGBoost", "CATboost"]
+        }, 
+        "keyword" : ["Regression", "Tabular Data", "Feature Engineering"],
+        "link" : {
+                    "Project" : "",
+                    "paper" : "",
+                    "apps" : ""
+                }
+    },
+    {
+        "id"    : 2,
+        "title" : "Exploratory Data Analysis and Multilabel Classification on Flu Shot Dataset",
+        "subtitle" : "FIND IT 2023 UGM Competition Preliminary 1",
+        "scale" : "Competition Project",
+        "type" : ["Machine Learning"],
+        "start_date" : "6/05/2023",
+        "end_date" : "12/05/2023",
+        "pin" : false,
+        "image" : [],
+        "times" : [],
+        "description" : "The dataset used is data from the 2009 National H1N1 Flu Survey (NHFS) conducted by the Centers for Disease Control and Prevention (CDC). This dataset contains information about individuals involved in the survey related to the H1N1 flu pandemic in 2009.<br><br>This project aims to conduct Exploratory Data Analysis, which includes univariate, bivariate, and multivariate analysis on categorical and numerical data, and implement multilabel classification using the Logistic Regression and Naïve Bayes methods.<br><br>The best accuracy result for the h1n1_vaccine label is 83%, and for the seasonal_vaccine label, it is 85% using logistic regression. This competition was conducted in teams, and my partner and I worked together on it.",
+        "tech" : {
+            "language" : ["Python"],
+            "package": ["Numpy", "Pandas", "Scikit-learn"]
+        }, 
+        "keyword" : ["Classification", "Tabular Data", "Multi-label", "Exploratory Data Analysis"],
+        "link" : {
+                    "Project" : "",
+                    "paper" : "",
+                    "apps" : ""
+                }
+    },
+    {
+        "id"    : 3,
+        "title" : "Prediction Exhange Rate USD to IDR Using LSTM",
+        "subtitle" : "Final Quiz for Deep Learning Courses",
+        "scale" : "Academic Project",
+        "type" : ["Machine Learning"],
+        "start_date" : "01/06/2023",
+        "end_date" : "03/06/2023",
+        "pin" : false,
+        "image" : [],
+        "times" : [],
+        "description" : "The dataset used is data USD to IDR time series data, with a total sample of 200 data. This project aims to perform forecasting on the IDR to USD exchange rate for the next 60 days. Regularization such as dropout, l1, l2, early stopping and Hyperparameter searching such as number of layers, units in layers, dropout rate, optimizer and the regularizer on the kernel or bias are used to get the best fit on the model. The deep learning method used in this project is LSTM.<br><br>The hyperparameters with the smallest MSE are: layer_lstm=2, units=200, dropout=0.0, optimizer=adam, regularizer=None, with an MSE value of 7503. Because the results were deemed unsatisfactory, I performed retraining by reducing the batch_size and adjusting the number of epochs. The obtained MSE result is 4811.",
+        "tech" : {
+            "language" : ["Python"],
+            "package": ["Numpy", "Pandas", "Scikit-learn", "TensorFlow"]
+        }, 
+        "keyword" : ["Forecasting", "Deep Learning", "Time Series", "Hyperparameter Searching"],
+        "link" : {
+                    "Project" : "https://github.com/kevin-wijaya/USD-to-IDR-Forecast-Prediction",
+                    "paper" : "",
+                    "apps" : ""
+                }
+    },
+    {
+        "id"    : 4,
+        "title" : "Implementation Search Engine and Query Expansion on Indonesian News",
+        "subtitle" : "Final Project Intelligent Information Retrieval Courses",
+        "scale" : "Academic Project",
+        "type" : ["Machine Learning", "Software Development"],
+        "start_date" : "30/12/2022",
+        "end_date" : "05/1/2023",
+        "pin" : false,
+        "image" : [],
+        "times" : [],
+        "description" : "Create a search engine, and classification in categories online news in Indonesia. Data is retrieved using crawling method with simple html dom on news detik.com and indozone.id. query expansion using top k blind or pseudo relevant feedback. Classification using Navie Bayes. Vectorization method using TF-IDF. the similarity method used is cosine and euclidean distance.",
+        
+        "tech" : {
+            "language" : ["PHP"],
+            "package":["Sastrawi", "simple_html_dom", "PHP-ML"]
+        }, 
+        "keyword" : ["Crawling", "Search Engine", "Query Expansion" ,"Classification", "Natural language Processing"],
+        "link" : {
+                    "Project" : "https://github.com/bayua9731/Project-IIR-UAS",
+                    "paper" : "",
+                    "apps" : ""
+                }
+    },
+    {
+        "id"    : 5,
+        "title" : "Stroke Prediction with Machine Learning and Oversampling",
+        "subtitle" : "Final Project Machine Learning Courses",
+        "scale" : "Academic Project",
+        "type" : ["Machine Learning"],
+        "start_date" : "14/1/2023",
+        "end_date" : "19/1/2023",
+        "pin" : false,
+        "image" : [],
+        "times" : [],
+        "description" : "This dataset used is stroke dataset obtained from kaggle. Making predictions on the stroke dataset using several scenarios with supervised learning methods and do the oversampling approach using the method SMOTE. Resampling is used because the stroke dataset has unbalanced labels.<br><br>The best results are obtained with accuracy of 95.61% using the Knearest Neighbors (KNN) model.<br><br><div class='w-full flex items-center flex-col'><span class='inline-block w-full max-w-3xl text-base-100 text-[16px]'>Table 1. Comparison results of training accuracy across several methods.</span><table class='text-[16px] text-base-100 text-center w-full max-w-3xl'><thead class='font-bold bg-info'><tr class='border-t'><th>Model</th><th>Original Data</th><th>Resampling Data</th></tr></thead><tbody><tr class='font-normal'><td class='font-bold'>KNN</td><td>95.1076%</td><td class='font-bold'>95.6119%</td></tr><tr class='font-normal'><td>Naive Bayes</td><td>93.8682%</td><td>77.3055%</td></tr><tr class='font-normal'><td class='font-bold'>Logistic Regression</td><td class='font-bold'>95.1729%</td><td>77.2026%</td></tr><tr class='font-normal'><td>ANN</td><td>94.1944%</td><td>91.6695%</td></tr></tbody></table></div><br><br><div class='w-full flex items-center flex-col'><span class='inline-block w-full max-w-3xl text-base-100 text-[16px]'>Table 2. Comparison of evaluation results on several methods</span><table class='text-[16px] text-base-100 text-center w-full max-w-3xl'><thead class='font-bold bg-info'><tr class='border-t'><th>Model</th><th>Original Data</th><th>Resampling Data</th></tr></thead><tbody><tr class='font-bold'><td>KNN</td><td>95%</td><td>96%</td></tr><tr class='font-normal'><td>Naive Bayes</td><td>94%</td><td>77%</td></tr><tr class='font-normal'><td>Logistic Regression</td><td>95%</td><td>77%</td></tr><tr class='font-normal'><td>ANN</td><td>94%</td><td>92%</td></tr></tbody></table></div><br><br><div class='w-full flex items-center flex-col'><span class='inline-block w-full max-w-3xl text-base-100 text-[16px]'>Table 3. Comparison of cross-validation results (k=3) on several methods</span><table class='text-[16px] text-base-100 text-center w-full max-w-3xl'><thead class='font-bold bg-info'><tr class='border-t'><th>Model</th><th>Original Data</th><th>Resampling Data</th></tr></thead><tbody><tr class='font-bold'><td>KNN</td><td>95.1279%</td><td>92.6865%</td></tr><tr class='font-normal'><td>Naive Bayes</td><td>86.0477%</td><td>76.8366%</td></tr><tr class='font-normal'><td>Logistic Regression</td><td>95.1082%</td><td>76.435%</td></tr><tr class='font-normal'><td>ANN</td><td>95.1082%</td><td>82.2472%</td></tr></tbody></table></div><br><br>",
+        "tech" :{
+            "language" : ["Python"],
+            "package":["Numpy", "Pandas", "Scikit-learn", "Imb-learn"]
+        }, 
+        "keyword" : ["Classification", "Tabular Data", "Feature Extraction", "Dimentional Reduction", "Oversampling"],
+        "link" : {
+                    "Project" : "https://github.com/kevin-wijaya/Stroke-Sampling-Prediction",
+                    "paper" : "",
+                    "apps" : ""
+                }
+    },
+    {
+        "id"    : 6,
+        "title" : "Digital Image Preprocessing Analysis on CIFAR-10 Dataset",
+        "subtitle" : "Final Project for Digital Image Processing Course",
+        "scale" : "Academic Project",
+        "type" : ["Machine Learning"],
+        "start_date" : "20/06/2022",
+        "end_date" : "27/06/2022",
+        "pin" : false,
+        "image" : [],
+        "times" : [],
+        "description" : "The CIFAR-10 dataset consists of 60,000 colored images, each with a size of 32x32 pixels, and it contains 10 classes: Airplane, Automobile, Bird, Cat, Deer, Dog, Frog, Horse, Ship, and Truck. Each class has 6000 data samples. The dataset is split into 50,000 training data and 10,000 testing data.<br><br>This project aims to analyze how image preprocessing techniques can affect the accuracy results on the CIFAR-10 dataset.<br><br>The experiment was conducted by applying several preprocessing methods to the data and performing classification using a Convolutional Neural Network (CNN) on the CIFAR-10 dataset. The best result was obtained with raw data (without preprocessing), achieving an accuracy of 92.67%.<br><br><div class='w-full flex items-center flex-col'><span class='inline-block w-full max-w-3xl text-base-100 text-[16px]'>Table 1. Preprocessing Experiment</span><table class='text-base-100 text-center w-full max-w-3xl'><thead class='font-bold bg-info'><tr class='border-t'><th>Preprocessing</th><th>Loss</th><th>Accuracy</th></tr></thead><tbody><tr class='font-bold'><td>Original</td><td>0.577</td><td>82.65%</td></tr><tr class='font-normal'><td>Equalization</td><td>0.748</td><td>78.53%</td></tr><tr class='font-normal'><td>Equalization + Grayscale</td><td>0.785</td><td>76.88%</td></tr><tr class='font-normal'><td>Grayscale + Laplacian</td><td>0.904</td><td>72.25%</td></tr><tr class='font-normal'><td>Grayscale + Sobel</td><td>0.852</td><td>75.43%</td></tr><tr class='font-normal'><td>Equalization + Grayscale + Segmentation</td><td>1.148</td><td>62.08%</td></tr><tr class='font-normal'><td>Equalization + Grayscale + Laplacian + Sobel + Segmentation</td><td>2.303</td><td>9.58%</td></tr></tbody></table></div><br>The best results were obtained using original data without preprocessing, then validation was conducted using K-Fold cross-validation with K = 3, the final result obtained was 92.98% accuracy and 0.253 loss.<br><br>",
+        "tech" : {
+            "language" : ["Python"],
+            "package": ["Numpy", "Scikit-learn", "Keras", "OpenCV", "Scikit-Image"]
+        },
+        "keyword" : ["Classification", "Deep Learning", "Computer Vision", "Image Processing"],
+        "link" : {
+                    "Project" : "https://github.com/kevin-wijaya/CIFAR10-Preprocessing-Analysis",
+                    "paper" : "",
+                    "apps" : ""
+                }
+    },
+    {
+        "id"    : 7,
+        "title" : "Tile Puzzle Solver Using BFS and DFS Algorithm",
+        "subtitle" : "Applied AI Search Algorithms Concept",
+        "scale" : "Self Project",
+        "type" : ["Machine Learning"],
+        "start_date" : "22/09/2022",
+        "end_date" : "28/09/2022",
+        "pin" : false,
+        "image" : [],
+        "times" : [],
+        "description" : "BFS and DFS are one of the classic algorithms artificial intelligence to search for targets based on search (search). In this project I studied implement the taught BFS and DFS concepts in AI Fundamental courses. I also use node tree approach to suit the BFS concept and DFS.",
+        "tech" : {
+            "language" : ["Python"]
+        }, 
+        "keyword" : ["Search", "Artificial Intelligence", "Solver"],
+        "link" : {
+                    "Project" : "",
+                    "paper" : "",
+                    "apps" : ""
+                }
+    },
+    {
+        "id"    : 8,
+        "title" : "Build a Stack-Based Math Expression Solver for the Game 24",
+        "subtitle" : "Applied Data Structure Concept",
+        "scale" : "Self Project",
+        "type" : ["Machine Learning"],
+        "start_date" : "13/08/2022",
+        "end_date" : "22/08/2022",
+        "pin" : false,
+        "image" : [],
+        "times" : [],
+        "description" : "Stack is a data structure that follows the concept \"LIFO\" (Last-In-First-Out). In this project I studied to implement stack and math concepts expression using infix and postfix taught in the Data Structure courses. I use curses library as the terminal interface for show more interactive results.",
+        "tech" : {
+            "language" : ["Python"],
+            "package":["Curses", "Math"]
+        }, 
+        "keyword" : ["Data Structure", "Data Structure", "Solver"],
+        "link" : {
+                    "Project" : "https://github.com/kevin-wijaya/Solver-24",
+                    "paper" : "",
+                    "apps" : ""
+                }
+    },
+    {
+        "id"    : 9,
+        "title" : "AI-Generated Text Detection Using Deep Learning Approach on Indonesian Text",
+        "subtitle" : "Final Project for Deep Learning Courses",
+        "scale" : "Academic Project",
+        "type" : ["Machine Learning", "Software Development"],
+        "start_date" : "10/07/2023",
+        "end_date" : "17/07/2023",
+        "pin" : true,
+        "image" : [],
+        "times" : [],
+        "description" : "Artificial intelligence (AI) has become a popular popular technology that is now widely used by the public. That is due to the emergence of intelligent chatbots from OpenAI, namely ChatGPT. Various groups of people use ChatGPT for different purposes, one of them is students who use ChatGPT to understand material, do assignments, compose essays and paraphrase journals. Paraphrasing on ChatGPT and using paraphrased text as writing in papers can be considered a form of plagiarism.<br><br>The problem is, to find out whether the text was AI-generated or human-written text, it takes a very long and in-depth understanding of the patterns and arrangement of words in the text.<br><br>Therefore, a system is needed that is able to detect text generated by AI or not. This text detection system uses a deep learning approach. Human text data is collected from the Detik news portal and the Quora question-and-answer website.<br><br>AI text data is generated through a paraphrasing process on human text data. The vectorization in this research uses Doc2Vec and BERT Tokenizer. The models used in this study were LSTM, GRU, Bi-LSTM, Bi-GRU and BERT with the IndoBERT pre-trained model. Of the five models, the best accuracy on training data is BERT, while the best accuracy in evaluation with data validation is Bi-LSTM and Bi-GRU<br><br><div class='w-full flex items-center flex-col'><span class='inline-block w-full max-w-3xl text-base-100 text-[16px]'>Table 1. Accuracy on training process</span><table class='text-[16px] text-base-100 text-center w-full max-w-3xl'><thead class='font-bold bg-info'><tr class='border-t'><th>Model</th><th>Accuracy</th></tr></thead><tbody><tr class='font-normal'><td>LSTM</td><td>75.96%</td></tr><tr class='font-normal'><td>GRU</td><td>71.49%</td></tr><tr class='font-normal'><td>Bi-LSTM</td><td>75.29%</td></tr><tr class='font-normal'><td>Bi-GRU</td><td>76.73%</td></tr><tr class='font-bold'><td>IndoBERT</td><td>98.70%</td></tr></tbody></table></div><br><br><div class='w-full flex items-center flex-col'><span class='inline-block w-full max-w-3xl text-base-100 text-[16px] leading-1'>Table 2. Average metric evaluation on validation data </span><table class='text-[16px] text-base-100 text-center w-full max-w-3xl'><thead class='font-bold bg-info'><tr class='border-t'><th>Model</th><th>Precision</th><th>Recall</th><th>Accuracy</th><th>F1-Score</th></tr></thead><tbody><tr class='font-normal'><td>LSTM</td><td>75%</td><td>75%</td><td>75%</td><td>75%</td></tr><tr class='font-normal'><td>GRU</td><td>71%</td><td>72%</td><td>71%</td><td>71%</td></tr><tr class='font-bold'><td>Bi-LSTM</td><td>77%</td><td>77%</td><td>77%</td><td>77%</td></tr><tr class='font-bold'><td>Bi-GRU</td><td>77%</td><td>77%</td><td>77%</td><td>77%</td></tr><tr class='font-normal'><td>IndoBERT</td><td>71%</td><td>71%</td><td>71%</td><td>71%</td></tr></tbody></table></div><br><br>",
+        "tech" : {
+            "language" : ["Python", "HTML", "CSS", "JavaScript"],
+            "package": ["Numpy", "Pandas", "Gensim", "Tensorflow", "Torch", "Transformers", "Flask", "JQuery"]
+        }, 
+        "keyword" : ["Classification", "Deep Learning", "Natural language Processing", "AI-Generated Text", "Deepfake Text"],
+        "link" : {
+                    "project" : "https://github.com/kevin-wijaya/AI-Generated-Text-Detection-with-Deep-Learning-Approach-on-Indonesian-Text.git",
+                    "paper" : "",
+                    "apps" : ""
+                }
+    },
+    {
+        "id"    : 10,
+        "title" : "Mobile Applications for Ubaya Medical Center",
+        "subtitle" : "Final Project for Advance Native Mobile Programming Courses",
+        "scale" : "Academic Project",
+        "type" : ["Software Development"],
+        "start_date" : "16/07/2023",
+        "end_date" : "21/07/2023",
+        "pin" : false,
+        "image" : [],
+        "times" : [],
+        "description" : "At the end of the Advanced Native Mobile Programming course, I made an Android-based mobile application related to a healthcare or medical center application for a clinic at my university, namely the Ubaya Medical Center. In this application I use the Model, View, View Model (MVVM) architecture as well as data binding, navigation components, room and SQLite.<br><br>The majority of the data being utilized consists of dummy information, while the doctor identities employed are obtained from the Halodoc website (https://www.halodoc.com) and health articles  from the Biofarma website (https://biofarma.co.id).<br><br>",
+        "tech" : {
+            "language" : ["Kotlin"],
+            "package": ["Jetpack Compose"],
+            "database" : ["SQLite"]
+        }, 
+        "keyword" : ["Android", "Native", "Navigation", "Healthcare Apps", "UMC"],
+        "link" : {
+                    "project" : "https://github.com/kevin-wijaya/UMC-FINAL-PROJECT",
+                    "paper" : "",
+                    "apps" : ""
+                }
+    },
+    {
+        "id"    : 11,
+        "title" : "Topic Modelling with LDA and LSA on Detik News",
+        "subtitle" : "Final Project for Natural Language Processing Courses",
+        "scale" : "Academic Project",
+        "type" : ["Machine Learning" ,"Software Development"],
+        "start_date" : "18/07/2023",
+        "end_date" : "20/07/2023",
+        "pin" : false,
+        "image" : [],
+        "times" : [],
+        "description" : "To understand more about the headlines on the detik news portal in the \"news\" category, in this natural language processing course, my friends and I created a topic modelling for headlines in detik news using two methods, namely Latent Dirichlet Allocation (LDA) and Latent Semantic Analysis (LSA). The number of topics to be determined depends on the coherence of each method used.",
+        "tech" : {
+            "language" : ["Python", "PHP", "HTML", "CSS"],
+            "package": ["Numpy", "Pandas", "WorldCloud", "BeautifulSoup4", "Sastrawi", "NLTK", "Scikit-learn", "Gensim", "Bootsrap 5"],
+            "database" : ["MySQL"]
+        }, 
+        "keyword" : ["Topic Modelling", "Latent Dirichlet Allocation", "Latent Semantic Analysis", "Natural language Processing"],
+        "link" : {
+                    "project" : "https://github.com/kevin-wijaya/project-nlp-UAS",
+                    "paper" : "",
+                    "apps" : ""
+                }
+    }
+]

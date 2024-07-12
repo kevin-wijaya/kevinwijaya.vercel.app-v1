@@ -1,0 +1,22 @@
+[
+    {
+        "id" : 1,
+        "name" : "Instagram",
+        "link" : "https://www.instagram.com/_kevinwijaya/"
+    },
+    {
+        "id" : 2,
+        "name" : "LinkedIn",
+        "link" : "https://www.linkedin.com/in/kevinwijaya-/"
+    },
+    {
+        "id" : 3,
+        "name" : "Github",
+        "link" : "https://github.com/kevin-wijaya/"
+    },
+    {
+        "id" : 4,
+        "name" : "Medium",
+        "link" : "https://medium.com/@kevin-wijaya"
+    }
+]
